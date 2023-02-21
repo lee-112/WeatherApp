@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+    <style>/* CSS styles here */</style>
+  </head>
+  <body>
+    <header>
+      <a title="Weather API">
+        <img 
+          src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' 
+          alt="Weather data by WeatherAPI.com"
+          width="100px"
+          height="40px">
+      </a> 
+    </header>
+    <main>
+      <h1 class="h1-boldFont">
+        <span class="h1-lightFont">Weather |</span>
+        Forecast
+      </h1>
+
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Enter a city">
+        <button id="search-button">Search</button>
+        <div id="weather-data"></div>
+      </div>
+
+      <div id="weather-data"></div>
+      <script src="script.js"></script>
+      <script 
+        src="https://kit.fontawesome.com/7c8801c017.js" 
+        crossorigin="anonymous">
+      </script>
+    </main>
+    <footer>
+      Powered by
+      <a 
+        href="https://www.weatherapi.com/" 
+        title="Free Weather API">WeatherAPI
+      </a>
+    </footer>
+  </body>
+</html>
