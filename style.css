@@ -1,1 +1,61 @@
-/* Define CSS style */
+/* Define CSS styles for the weather data 
+@import url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2);
+#weather-data {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 18px;
+}
+*/
+
+:root {
+  --linear-gradient-Start: hsl(242deg 25% 25%);
+  --linear-gradient-Middle: hsl(252deg 19% 33%);
+  --linear-gradient-End: hsl(242deg 12% 40%);
+
+  --Midnight-Primary: hsl(242deg 26% 15%);
+  --Midnight-Secondary: hsl(242deg 12% 40%);
+
+  --PureWhite: hsl(0deg 0% 100%);
+  --PureBlack: hsl(0, 0%, 0%);
+
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: linear-gradient(
+    var(--linear-gradient-Start), 
+    var(--linear-gradient-Middle), 
+    var(--linear-gradient-End)
+  );
+}
+
+header {
+  background: var(--Midnight-Primary);
+}
+
+footer {
+  background-color: var(--Midnight-Primary);
+  font-size: 14px;
+}
+
+#search-input {
+  background-color: var(--Midnight-Secondary);
+  outline: solid 2px var(--Midnight-Secondary);
+}
+
+#search-button {
+  background-color: var(--Midnight-Secondary);
+}
