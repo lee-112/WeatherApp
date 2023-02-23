@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Weather App is a web application that allows users to check the current weather and the forecast for the upcoming days for any location around the world. The app uses the OpenWeather API to retrieve weather data and displays it in an easy-to-understand format. The app is built using HTML, CSS, and JavaScript.  
+Weather App is a powerful web application designed to provide users with accurate and up-to-date information on current and upcoming weather conditions. With this app, users can easily check the current weather and forecast for any location across the world. The app utilizes the WeatherAPI to obtain the latest weather data and presents it in a user-friendly format. Weather App is built using the latest web technologies including HTML, CSS, and JavaScript to ensure a seamless user experience.  
 <br>
 
 ## Features
@@ -29,20 +29,24 @@ open index.html
 
 ## Usage
 
-1. Enter the name of the location you want to check the weather for in the search bar.
-2. Click on the search button or press Enter.
-3. The app will display the current weather conditions for the selected location.
-4. To view the forecast for the next 5 days, click on the "Show forecast" button.
-5. To switch between Celsius and Fahrenheit units, click on the toggle button.  
+To access weather data, you can enter any of the following information in the search bar:
+
+  - City or town name
+  - Latitude and Longitude (decimal degree)
+  - UK postcode
+  - US ZIP code
+  - Canada postal code
+  - IP address
+  - Auto IP detection
+  - Airport code
+  - metar
+
+Once you have entered the desired location information, click on the search button or press Enter. The app will display the current weather conditions for the selected location. To view the forecast for the next 5 days, simply click on the "Show forecast" button.  
 <br>
 
 ## API
 
-Weather App uses the OpenWeather API to retrieve weather data. To use the app, you will need to sign up for an API key from OpenWeather and replace the `API_KEY` variable in the `script.js` file with your own API key.
-
-```javascript
-const API_KEY = 'your-api-key-here';
-```  
+The Weather App utilizes WeatherAPI to fetch the current and historical weather data. To use the application, you must register and obtain an API key from [WeatherAPI](https://www.weatherapi.com/api.aspx). Simply open the `api-key.txt` file and replace the text `paste_your_api_key_here` with your own API key.  
 <br>
 
 ## License
@@ -52,4 +56,10 @@ Weather App is released under the MIT License. See [LICENSE](/LICENSE) for more 
 
 ## Credits
 
-Weather App was created by Lee. The app uses the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data. The weather icons used in the app are from [Flaticon](https://www.flaticon.com/).
+Weather App was developed by [Lee-112](https://github.com/lee-112), with contributions from [Hachamge](https://github.com/hachamge).
+
+The following resources were used in the development of this app:
+
+- Bootstrap 5
+- jQuery
+- WeatherAPI
