@@ -1,16 +1,11 @@
-/* Define CSS styles for the weather data 
-@import url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2);
-#weather-data {
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 400px;
-  font-size: 18px;
-}
-*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 :root {
+  --Blue-1: hsl(207deg 94% 16%);
+  --Blue-2: hsl(219deg 64% 14%);
+  --Blur: #0000008c;
+  --Blur-2: #0000009c;
+
   --linear-gradient-Start: hsl(242deg 25% 25%);
   --linear-gradient-Middle: hsl(252deg 19% 33%);
   --linear-gradient-End: hsl(242deg 12% 40%);
@@ -21,7 +16,7 @@
   --PureWhite: hsl(0deg 0% 100%);
   --PureBlack: hsl(0, 0%, 0%);
 
-  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Poppins', sans-serif;*/
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -32,9 +27,17 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  height: auto;
+}
+
+div.container {
+  max-width: 768px;
+  border: none;
+  padding: 0;
 }
 
 body {
+  font-family: 'Outfit', sans-serif;
   background: linear-gradient(
     var(--linear-gradient-Start), 
     var(--linear-gradient-Middle), 
@@ -42,20 +45,76 @@ body {
   );
 }
 
-header {
+body header {
   background: var(--Midnight-Primary);
 }
 
-footer {
+body footer {
   background-color: var(--Midnight-Primary);
   font-size: 14px;
+  display: block;
+  text-align: center;
 }
 
 #search-input {
   background-color: var(--Midnight-Secondary);
-  outline: solid 2px var(--Midnight-Secondary);
+  border: solid 2px var(--Midnight-Secondary);
 }
 
 #search-button {
   background-color: var(--Midnight-Secondary);
+}
+
+
+/*-------------*/
+/*    Cards    */
+/*-------------*/
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+section.card {
+  border: none;
+  max-width: 768px;
+}
+
+.card .currentWeather-header,
+.card .currentWeather-footer {
+  background-color: var(--Blur);
+}
+
+.card .card-header,
+.card .card-footer {
+  border: none;
+  background-color: var(--Blur);
+}
+
+.h1-currentWeather {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.card .currentWeather-bodyInfo {
+  background-color: var(--Blur);
+  max-width: 384px;
+  width: 288px;
+  border: none;
+}
+
+.weatherForecast .card-header, 
+.weatherForecast .card-body {
+  background-color: var(--Blur);
+}
+
+.weatherForecast {
+  display: block;
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+.weatherForecast .card {
+  background-color: var(--Blur-2);
+  min-width: 166px;
+  padding: 0.5rem;
 }
