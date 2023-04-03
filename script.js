@@ -65,8 +65,12 @@ const getHourlyConditions = (data, weatherImages, weatherHourly) => {
 const createBackgroundImageHTML = (data) => {
   const backgroundImageHTML = `
     <section 
-      class="card rounded" style="background-image: url('/assets/background/${data.current.is_day}/${data.current.condition.code}.png'); background-position: 100%; background-size: cover;"> <img 
-        src="/assets/background/${data.current.is_day}/${data.current.condition.code}.png" style="display:none" onerror=" this.onerror=null; this.style.display='none'; this.parentNode.style.backgroundImage='url(/assets/background/${data.current.is_day}/default.png)';">
+      class="card rounded" 
+      style="background-image: url('/assets/background/${data.current.is_day}/${data.current.condition.code}.png'); background-position: 100%; background-size: cover;"> 
+      <img 
+        src="/assets/background/${data.current.is_day}/${data.current.condition.code}.png" 
+        style="display:none" 
+        onerror="this.onerror=null; this.style.display='none'; this.parentNode.style.backgroundImage='url(/assets/background/${data.current.is_day}/default.png)';"> 
   `;
   return backgroundImageHTML;
 }
